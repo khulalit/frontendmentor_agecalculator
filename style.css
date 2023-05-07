@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: popins-regular;
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+
+}
+@font-face{
+    font-family: popins-bold-italic;
+    src: url('./assets//fonts/Poppins-BoldItalic.ttf');
+}
+@font-face{
+    font-family: popins-bold;
+    src: url('./assets//fonts/Poppins-Bold.ttf');
+}
+.container{
+    height: 100vh;
+    background-color: lightgray;
+    font-family: 'popins-regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+}
+.app-div{
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem 1rem 6rem 1rem;
+}
+.app-header button{
+    border: none;
+    background:  rgb(73, 0, 156);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -21px;
+    right: 0;
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-1px);
+}
+.app-header{
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    padding-block: 2rem;
+}
+.app-header input{
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+    padding-inline: 4px;
+    font-family: 'popins-bold';
+}
+.app-header div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+label{
+    text-transform: uppercase;
+    font-size: .6rem;
+}
+.app-body div{
+    font-family: "popins-bold-italic";
+    font-size: 2rem;
+}
+.app-body span{
+    color: rgb(73, 0, 156)
+}
+input:focus{
+    border: 1px solid blue;
+}
+.error{
+    font-size: 8px;
+    color: red;
+    display: none;
+}
+button:active{
+    background-color:black;
+}
